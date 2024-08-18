@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/images/bg-intro-desktop.png);
+    background-color: #FF7979;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.hero-text h1 {
+    color: white;
+    font-weight: bold;
+    line-height: 55px;
+    letter-spacing: -0.52px;
+    font-size: 50px;
+}
+
+.hero-text p {
+    color: white;
+    font-weight: 500;
+    line-height: 26px;
+    font-size: 16px;
+}
+
+.hero-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.hero-form .purple-box {
+    background-color: #5E54A4;
+    text-align: center;
+    padding: 17px;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 15%);
+}
+
+.hero-form form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 15%);
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-form form input {
+    background-color: white;
+    padding: 15px 0px 15px 32px;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.hero-form form button {
+    width: 100%;
+    background-color: #38CC8B;
+    padding: 15px 0;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    border: none;
+    box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 9%);
+}
+
+.hero-form form button:hover {
+    cursor: pointer;
+    background-color: #77E2B3;
+}
+
+.hero-form form .text-terms {
+    text-align: center;
+    color: #BAB7D4;
+    font-size: 11px;
+    line-height: 26px;
+    font-weight: 500;
+    padding-top: 8px;
+}
+
+.hero-form form .text-terms .terms {
+    color: #FF7979;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+p.validation-message {
+    margin-top: -10px;
+    text-align: right;
+    font-size: 11px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+p.validation-message::after {
+    content: url(/images/icon-error.svg);
+    position: absolute;
+    top: -45px;
+    right: 20px;
+}
+
+input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+input:focus {
+    outline: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin: 88px 24px;
+    }
+
+    .container {
+        margin: 0 auto;
+        max-width: 375px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 45px;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: -0.29px;
+    }
+
+    .hero-form .purple-box {
+        background-color: #5E54A4;
+        text-align: center;
+        padding: 18px 68px;
+        width: 100%;
+        border-radius: 5px;
+        color: white;
+        box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 15%);
+    }
+
+    .hero-form form {
+        padding: 24px;
+    }
+}
